@@ -24,3 +24,121 @@ body {
   width: 40px !important;
   height: 38px !important;
 }
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+  font-family:  'Inter', sans-serif;
+  margin: 0%;
+  background-color: #100060;
+  overflow: hidden;
+
+
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.timer{
+  font-size: 200px;
+}
+
+.mode{
+  font-size: 25px;
+  margin: 2px;
+}
+
+button{
+  color: white;
+  background-color: black;
+  margin: 2px;
+}
+
+.breaks button{
+  background-color: red;
+}
+
+.focus{
+  width: 100%;
+  background-color: red;
+}
+
+/* Notes-css */
+.notes-main{
+  margin: 25px;
+width: 1000px;
+}
+
+.blank-space{
+  background-color: black;
+  height: 70px;
+  color: white;
+  display: flex;
+}
+.blank-space p {
+margin: 20px;
+font-size: 25px;
+}
+
+textarea{
+height: 600px;
+resize: none;
+
+padding: 0%;
+border: 0;
+
+width: 100%;
+}
+
+
+.notes-title{
+  background-color: black;
+  height: 50px;
+  width: 200px;
+  margin: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.notes-all{
+  display: flex;
+  flex-direction: column;
+}
+
+.save-button , .delete-button{
+  background-color: black;
+  color: white;
+  height: 30px;
+  font-size: large;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+}
+.notes-title-name{
+  background-color: black;
+  color: white;
+  height: 30px;
+  font-size: large;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+
+}
