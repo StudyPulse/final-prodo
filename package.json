@@ -13,9 +13,11 @@
     "firebase": "^10.4.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.0",
+    "react-calendar": "^4.6.0",
     "react-dom": "^18.2.0",
     "react-google-button": "^0.7.2",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "rsuite": "^5.40.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
