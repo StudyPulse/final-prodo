@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 body {
   background-color: #fafafa;
   display: flex;
@@ -139,91 +145,3 @@ width: 100%;
 
 }
 
-/* Calendar.css */
-
-.Calendar {
-  max-width: 900px;
-  margin: 0 auto;
-  font-family: 'Arial', sans-serif;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-}
-
-.react-calendar {
-  width: 100%;
-  max-width: 3000px;
-  margin: 0 auto;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px #888;
-}
-
-.react-calendar__navigation {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-  background-color: #333;
-  color: black;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.react-calendar__tile {
-  text-align: center;
-  cursor: pointer;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.react-calendar__tile:hover {
-  background-color: #007BFF;
-  color: #fff;
-  transition: background-color 0.3s ease-in-out;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 5px;
-  margin: 10px 0;
-  border: 1px solid black;
-  border-radius: 25px;
-  outline: none;
-}
-
-button {
-  background-color: #007BFF;
-  color: black;
-  border: none;
-  border-radius: 10px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background-color: #007BFF;
-  color: #fff;
-  padding: 5px;
-  margin: 5px 0;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px #888;
-}
-
-li:hover {
-  background-color: #0056b3;
-  transition: background-color 0.3s ease-in-out;
-}
-
- 
