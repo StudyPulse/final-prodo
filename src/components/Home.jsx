@@ -1,7 +1,10 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
+import Pomodoro from "./Pomodoro";
+import Notes from "./Notes";
+import Calendar from './Calendar';
 
 const Home = () => {
   const { logOut, user } = useUserAuth();
@@ -25,6 +28,9 @@ const Home = () => {
           Log out
         </Button>
       </div>
+      <Link to="/pomodoro">Pomodoro</Link>
+      <Link to="/notes">Notes</Link>
+      <Link to="/calendar">Calendar</Link>
     </>
   );
 };
