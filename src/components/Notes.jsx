@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactDOM } from "react";
-import "../App.css";
+import "./Notes.css";
 import { useState } from "react";
 
 export default function Notes() {

@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@daypilot/daypilot-lite-react": "^3.18.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^1.0.6",
     "firebase": "^10.4.0",
+    "next": "^13.5.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.0",
     "react-calendar": "^4.6.0",

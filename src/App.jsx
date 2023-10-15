@@ -8,6 +8,8 @@ import Home from './components/Home';
 import Pomodoro from "./components/Pomodoro";
 import Notes from "./components/Notes";
 import Calendar from './components/Calendar';
+import './components/Calendar.css'
+import './components/Notes.css'
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Routes } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
