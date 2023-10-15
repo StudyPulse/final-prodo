@@ -5,6 +5,8 @@ import { useUserAuth } from "../context/UserAuthContext";
 import Pomodoro from "./Pomodoro";
 import Notes from "./Notes";
 import Calendar from './Calendar';
+import "../components/login.css";
+import Dashboard from "./dashboard";
 
 const Home = () => {
   const { logOut, user } = useUserAuth();
@@ -19,7 +21,7 @@ const Home = () => {
   };
   return (
     <>
-      <div className="p-4 box mt-3 text-center">
+      <div className="p-4 box mt-3 text-center main-login">
         Hello Welcome <br />
         {user && user.email}
       </div>
@@ -28,9 +30,18 @@ const Home = () => {
           Log out
         </Button>
       </div>
-      <Link to="/pomodoro">Pomodoro</Link>
-      <Link to="/notes">Notes</Link>
-      <Link to="/calendar">Calendar</Link>
+      <div>
+        {/* <Dashboard /> */}
+        <Link to="/pomodoro" className="link">
+          Pomodoro
+        </Link>
+        <Link to="/notes" className="link">
+          Notes
+        </Link>
+        <Link to="/calendar" className="link">
+          Calendar
+        </Link>
+      </div>
     </>
   );
 };
