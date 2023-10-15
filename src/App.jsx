@@ -36,11 +36,39 @@ function App() {
                   </ProtectedRoute>
                 }
               />
+              <Route
+                path="/pomodoro"
+                element={
+                  <ProtectedRoute>
+                    <Pomodoro />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+              path="/notes"
+              element={
+                <ProtectedRoute>
+                  <Notes />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+                path="/calendar"
+                element={
+                  <ProtectedRoute>
+                    <Calendar />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/kanban"
+                element={
+                  <ProtectedRoute>
+                    <Kanban />
+                  </ProtectedRoute>
+                }
+              />
               <Route path="/signup" element={<Signup />} />
-              <Route path="/pomodoro" element={<Pomodoro />} />
-              <Route path="/notes" element={<Notes />} />
-              <Route path="/calendar" element={<Calendar />} />
-              <Route path="/kanban" element={<Kanban />} />
             </Routes>
           </UserAuthContextProvider>
         </Col>
