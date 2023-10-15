@@ -31,6 +31,7 @@ const Home = () => {
         </Button>
       </div>
       <div>
+        {/* <Dashboard /> */}
         <Link to="/pomodoro" className="link">
           Pomodoro
         </Link>
@@ -39,9 +40,6 @@ const Home = () => {
         </Link>
         <Link to="/calendar" className="link">
           Calendar
-        </Link>
-        <Link to="/kanban" className="link">
-          Kanban
         </Link>
       </div>
     </>

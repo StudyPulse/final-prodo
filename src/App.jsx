@@ -19,7 +19,7 @@ import animation from "./animation/animation.json"
 import Kanban from "./components/Kanban";
 
 function App() {
-
+  const [count, setCount] = useState(0);
 
   return (
     <Container>

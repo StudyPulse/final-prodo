@@ -1,7 +1,6 @@
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: black;
   }
   .App {
     height: 100vh;
@@ -51,7 +50,6 @@ body {
   }
   .add__board > textarea {
     border: 0.5px solid rgb(167, 167, 167) !important;
-
     height: 2rem !important;
   }
   .card_detail > textarea {
@@ -63,3 +61,4 @@ body {
   .cardinfo__editable {
     width: fit-content;
   }
+  
