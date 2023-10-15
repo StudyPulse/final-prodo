@@ -7,6 +7,7 @@ import Notes from "./Notes";
 import Calendar from './Calendar';
 import "../components/login.css";
 import Dashboard from "./dashboard";
+import Kanban from './Kanban';
 
 const Home = () => {
   const { logOut, user } = useUserAuth();
@@ -40,6 +41,9 @@ const Home = () => {
         </Link>
         <Link to="/calendar" className="link">
           Calendar
+        </Link>
+        <Link to="/kanban" className="link">
+          Kanban
         </Link>
       </div>
     </>
