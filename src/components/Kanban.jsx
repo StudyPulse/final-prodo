@@ -8,8 +8,7 @@ import { v4 as uuidv4 } from "uuid";
 import Editable from "../assets/Editable/Editable";
 import useLocalStorage from "use-local-storage";
 import "../assets/bootstrap.css";
-function App() {
-    
+function Kanban() {
   const [data, setData] = useState(
     localStorage.getItem("kanban-board")
       ? JSON.parse(localStorage.getItem("kanban-board"))
@@ -164,4 +163,4 @@ function App() {
   );
 }
 
-export default App;
+export default Kanban;
