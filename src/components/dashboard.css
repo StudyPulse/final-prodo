@@ -1,0 +1,30 @@
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 200px;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 20px;
+    height: 200px;
+
+}
+.dashboard-links{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px 20px;
+    font-size: 15px;
+}
+
+.dashboard a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+
+}
+
+.logo{
+    height: fit-content;
+    margin: 5px;
+}

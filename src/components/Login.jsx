@@ -4,6 +4,7 @@ import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import GoogleButton from "react-google-button";
 import { useUserAuth } from "../context/UserAuthContext";
+import "../components/login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -35,20 +36,22 @@ const Login = () => {
 
   return (
     <>
-      <div className="p-4 box">
+      <div className="p-4 box main-login">
         <h2 className="mb-3">Welcome to PRODO</h2>
         {error && <Alert variant="danger">{error}</Alert>}
-        <Form onSubmit={handleSubmit}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form className="form-main" onSubmit={handleSubmit}>
+          <Form.Group className="mb-3 " controlId="formBasicEmail">
             <Form.Control
+              className="text-field"
               type="email"
               placeholder="Email address"
               onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Group className="mb-3 " controlId="formBasicPassword">
             <Form.Control
+              className="text-field"
               type="password"
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
@@ -56,7 +59,7 @@ const Login = () => {
           </Form.Group>
 
           <div className="d-grid gap-2">
-            <Button variant="primary" type="Submit">
+            <Button variant="primary" className="btn" type="Submit">
               Log In
             </Button>
           </div>
@@ -71,7 +74,8 @@ const Login = () => {
         </div>
       </div>
       <div className="p-4 box mt-3 text-center">
-        Don't have an account? <Link to="/signup">Sign up</Link>
+        <p>Don't have an account? </p>
+        <Link to="/signup">Sign up</Link>
       </div>
     </>
   );
