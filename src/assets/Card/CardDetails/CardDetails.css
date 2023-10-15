@@ -88,3 +88,7 @@
 .strike-through {
   text-decoration: line-through;
 }
+.local__bootstrap{
+  background-color: white;
+  color: black;
+}

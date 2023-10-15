@@ -41,6 +41,9 @@ const Home = () => {
         <Link to="/calendar" className="link">
           Calendar
         </Link>
+        <Link to="/kanban" className="link">
+          Kanban
+        </Link>
       </div>
     </>
   );
