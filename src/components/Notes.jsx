@@ -4,6 +4,7 @@ import "./Notes.css";
 import { useState } from "react";
 
 export default function Notes() {
+  
   const [notesList, setNotesList] = useState([]);
   const [currentNote, setCurrentNote] = useState("");
   const [noteTitle, setNoteTitle] = useState("Enter the Notes Title");
