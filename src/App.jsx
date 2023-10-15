@@ -10,6 +10,7 @@ import Notes from "./components/Notes";
 import Calendar from './components/Calendar';
 import './components/Calendar.css'
 import './components/Notes.css'
+import './components/Kanban'
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Routes } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
@@ -38,6 +39,7 @@ function App() {
               <Route path="/pomodoro" element={<Pomodoro />} />
               <Route path="/notes" element={<Notes />} />
               <Route path="/calendar" element={<Calendar />} />
+              <Route path="/kanban" element={<Kanban />} />
             </Routes>
           </UserAuthContextProvider>
         </Col>
