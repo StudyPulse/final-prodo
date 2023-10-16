@@ -17,7 +17,7 @@ body {
   }
   
   .app_boards {
-    margin-top: 20px;
+    margin-top: 40px;
     min-width: fit-content;
     display: flex;
     gap: 30px;

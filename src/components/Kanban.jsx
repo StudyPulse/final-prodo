@@ -52,17 +52,17 @@ function Kanban() {
     return tempData;
   };
 
-  // const dragCardInSameBoard = (source, destination) => {
-  //   let tempData = Array.from(data);
-  //   console.log("Data", tempData);
-  //   const index = tempData.findIndex(
-  //     (item) => item.id.toString() === source.droppableId
-  //   );
-  //   console.log(tempData[index], index);
-  //   let [removedCard] = tempData[index].card.splice(source.index, 1);
-  //   tempData[index].card.splice(destination.index, 0, removedCard);
-  //   setData(tempData);
-  // };
+  const dragCardInSameBoard = (source, destination) => {
+    let tempData = Array.from(data);
+    console.log("Data", tempData);
+    const index = tempData.findIndex(
+      (item) => item.id.toString() === source.droppableId
+    );
+    console.log(tempData[index], index);
+    let [removedCard] = tempData[index].card.splice(source.index, 1);
+    tempData[index].card.splice(destination.index, 0, removedCard);
+    setData(tempData);
+  };
 
   const addCard = (title, bid) => {
     const index = data.findIndex((item) => item.id === bid);
@@ -131,7 +131,6 @@ function Kanban() {
   }, [data]);
 
   return (
-    
     <DragDropContext onDragEnd={onDragEnd}>
       <div className="App" data-theme={theme}>
         <Navbar switchTheme={switchTheme} />
