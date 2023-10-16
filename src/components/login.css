@@ -42,7 +42,8 @@ p{
     background-color: white;
     margin: 5px;
     color: black;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .link {

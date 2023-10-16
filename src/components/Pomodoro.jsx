@@ -45,7 +45,7 @@ class PomodoroTimer extends Component {
     clearInterval(this.timer);
     const { currentMode, workTime, shortBreakTime, longBreakTime } = this.state;
 
-    if (currentMode === "work") {
+    if (currentMode === "Work") {
       this.setState({
         currentMode: "shortBreak",
         currentTime: shortBreakTime,
