@@ -12,6 +12,7 @@ import Pomodoro from "./components/Pomodoro";
 import Notes from "./components/Notes";
 import Calendar from './components/Calendar';
 import Kanban from "./components/Kanban";
+import { useNavigate, Link } from 'react-router-dom';
 
 function App() {
   const [animationVisible, setAnimationVisible] = useState(true);
@@ -38,7 +39,7 @@ function App() {
         <Col>
           <UserAuthContextProvider>
             {animationVisible ? (
-              <Lottie options={lottieOptions} height={200} width={200} />
+              <Lottie options={lottieOptions} height={400} width={400} />
             ) : (
               <Routes>
                 <Route path="/" element={<Login />} />

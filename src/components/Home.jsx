@@ -32,7 +32,6 @@ const Home = () => {
         </Button>
       </div>
       <div>
-        <Dashboard />
         <Link to="/pomodoro" className="link">
           Pomodoro
         </Link>
