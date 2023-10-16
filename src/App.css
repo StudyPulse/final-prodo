@@ -43,29 +43,30 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: wheat;
 }
 
 .timer{
   font-size: 200px;
+  color: wheat;
 }
 
 .mode{
-  font-size: 25px;
-  margin: 2px;
+  font-size: 30px;
+  margin: 10px;
 }
 
 button{
-  color: white;
-  background-color: black;
-  margin: 2px;
+  color: black;
+  margin: 5px;
 }
 
 .breaks button{
-  background-color: red;
+  background-color: wheat;
 }
 
 .focus{
-  width: 100%;
-  background-color: red;
+  width: 95%;
+  background-color: wheat;
 }
 

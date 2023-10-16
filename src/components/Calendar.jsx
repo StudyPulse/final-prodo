@@ -103,7 +103,6 @@ const Calendar = () => {
             width: 24,
             height: 24,
             action: "None",
-            image: `https://picsum.photos/24/24?random=${i}`,
             style: "border-radius: 50%; border: 2px solid #fff; overflow: hidden;",
           });
         }
@@ -118,7 +117,7 @@ const Calendar = () => {
         text: "Event 1",
         start: "2023-10-02T10:30:00",
         end: "2023-10-02T13:00:00",
-        participants: 2,
+        participants: 0,
       },
       {
         id: 2,
@@ -126,7 +125,7 @@ const Calendar = () => {
         start: "2023-10-03T09:30:00",
         end: "2023-10-03T11:30:00",
         backColor: "#6aa84f",
-        participants: 1,
+        participants: 0,
       },
       {
         id: 3,
@@ -134,7 +133,7 @@ const Calendar = () => {
         start: "2023-10-03T12:00:00",
         end: "2023-10-03T15:00:00",
         backColor: "#f1c232",
-        participants: 3,
+        participants: 0,
       },
       {
         id: 4,
@@ -142,7 +141,7 @@ const Calendar = () => {
         start: "2023-10-01T11:30:00",
         end: "2023-10-01T14:30:00",
         backColor: "#cc4125",
-        participants: 4,
+        participants: 0,
       },
     ];
 

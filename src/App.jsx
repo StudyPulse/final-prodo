@@ -8,6 +8,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Home from './components/Home';
+import Dashboard from './components/dashboard';
 import Pomodoro from "./components/Pomodoro";
 import Notes from "./components/Notes";
 import Calendar from './components/Calendar';
