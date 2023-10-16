@@ -22,7 +22,11 @@ const Home = () => {
   };
   return (
     <>
-      <div className="p-4 box mt-3 text-center main-login">
+      <center>
+        <img src="src/components/logo.png" />
+      </center>
+
+      <div className="p-4  mt-3 text-center main-login">
         Hello Welcome <br />
         {user && user.email}
       </div>
