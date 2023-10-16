@@ -8,7 +8,7 @@ export default function Dashboard() {
       <div className="dashboard-links">
         <img className="logo" src="src/components/logo.png" alt="logo" />
         <div>
-          {/* <Dashboard /> */}
+
           <Link to="/pomodoro" className="link">
             Pomodoro
           </Link>

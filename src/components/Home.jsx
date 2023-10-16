@@ -32,7 +32,7 @@ const Home = () => {
         </Button>
       </div>
       <div>
-        {/* <Dashboard /> */}
+        <Dashboard />
         <Link to="/pomodoro" className="link">
           Pomodoro
         </Link>

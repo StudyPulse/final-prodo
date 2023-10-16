@@ -131,6 +131,7 @@ function Kanban() {
   }, [data]);
 
   return (
+    
     <DragDropContext onDragEnd={onDragEnd}>
       <div className="App" data-theme={theme}>
         <Navbar switchTheme={switchTheme} />
