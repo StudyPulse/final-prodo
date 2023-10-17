@@ -9,10 +9,11 @@
   padding: 0.5rem;
   transition: ease-in-out 200ms;
   margin-inline: auto;
+  color: white;
 }
 .editable > p:hover {
   background-color: #ccc;
-  color: #000;
+  color: white;
   cursor: pointer;
 }
 .editable__input {
@@ -23,6 +24,7 @@
 }
 .editable__input > textarea {
   width: 98% !important;
+  height: 100px;
   -webkit-appearance: none;
   background-color: #fafbfc;
   border: none;

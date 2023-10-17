@@ -131,35 +131,36 @@ function Kanban() {
   }, [data]);
 
   return (
-    <DragDropContext onDragEnd={onDragEnd}>
-      <div className="App" data-theme={theme}>
-        <Navbar switchTheme={switchTheme} />
-        <div className="app_outer">
-          <div className="app_boards">
-            {data.map((item) => (
-              <Board
-                key={item.id}
-                id={item.id}
-                name={item.boardName}
-                card={item.card}
-                setName={setName}
-                addCard={addCard}
-                removeCard={removeCard}
-                removeBoard={removeBoard}
-                updateCard={updateCard}
-              />
-            ))}
-            <Editable
-              class={"add__board"}
-              name={"Add Board"}
-              btnName={"Add Board"}
-              onSubmit={addBoard}
-              placeholder={"Enter Board  Title"}
+    <div className="kanban-main"><DragDropContext onDragEnd={onDragEnd}>
+    <div className="App" data-theme={theme}>
+      <Navbar switchTheme={switchTheme} />
+      <div className="app_outer">
+        <div className="app_boards">
+          {data.map((item) => (
+            <Board
+              key={item.id}
+              id={item.id}
+              name={item.boardName}
+              card={item.card}
+              setName={setName}
+              addCard={addCard}
+              removeCard={removeCard}
+              removeBoard={removeBoard}
+              updateCard={updateCard}
             />
-          </div>
+          ))}
+          <Editable
+            class={"add__board"}
+            name={"Add Board"}
+            btnName={"Add Board"}
+            onSubmit={addBoard}
+            placeholder={"Enter Board  Title"}
+          />
         </div>
       </div>
-    </DragDropContext>
+    </div>
+  </DragDropContext></div>
+    
   );
 }
 
